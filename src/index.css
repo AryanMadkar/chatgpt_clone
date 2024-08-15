@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root{
+    min-height: 100vh;
+    display: flex;
+}
+*{
+    transition: all ease 0.3s;
+    font-family: "poppins",sans-serif;
+}
+
+#lion{
+    background: -webkit-linear-gradient(16deg, #12c2e9, #c471ed, #f64f59); /* Chrome 10-25, Safari 5.1-6 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cards{
+    margin: 1rem;
+    border-radius: 16px;
+    border: 2px solid white;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+}
+
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr{
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+    background: linear-gradient(to right,#F6FB7A,#17153B,#FF4C4C);
+    background-size: 800px 50px;
+    height: 20px;
+}
